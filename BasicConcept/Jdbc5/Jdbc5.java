@@ -14,13 +14,13 @@ public class Jdbc5 {
 		public static void main(String[] args) throws ClassNotFoundException, SQLException  {
 		
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Properties info = new Properties(); //Properties´Â Map°è¿­ Áß 1°³.
-			info.setProperty("user", "scott"); //Áı¾î³ÖÀ» ¶§´Â setProperty, »¬ ¶§´Â getProperty
+			Properties info = new Properties(); //PropertiesëŠ” Mapê³„ì—´ ì¤‘ 1ê°œ.
+			info.setProperty("user", "scott"); //ì§‘ì–´ë„£ì„ ë•ŒëŠ” setProperty, ëº„ ë•ŒëŠ” getProperty
 			info.setProperty("password", "tiger");
 			
-			Connection conn = DriverManager.getConnection("djbc:oracle:thin:@localhost:1521:ORCL", info);
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL", info);
 			
-			Statement stmt = conn.createStatement(); //4¹ø±îÁö ÇÑ °ÍÀÓ
+			Statement stmt = conn.createStatement(); //4ë²ˆê¹Œì§€ í•œ ê²ƒì„
 			String sql = "SELECT empno, ename, TO_CHAR(hiredate, 'yyyy-mm-dd'), " +
 					"dname, loc, dept.deptno " + 
 					"FROM emp INNER JOIN dept " +
