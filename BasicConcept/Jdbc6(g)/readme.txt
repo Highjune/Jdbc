@@ -1,10 +1,10 @@
-Properties써서 쉽게 JDBC하는 방법(DBConnection, DBClose 파일 분리까지)
+## Properties써서 쉽게 JDBC하는 방법(DBConnection, DBClose 파일 분리까지)
 
 (애초에 프로젝트 만들 때 oracle, mariadb driver(.jar파일) 넣고 시작)
 oracle.properties 파일을 만들어 놓으면 계속 불러와서 활용할 수 있음. 고정적인 driver를 제외하고는 url, id, passwd 다 변할 경우에는 이 파일만 바꾸면 됨.
 
-https://youtu.be/NvcWPkowzFU 34분부터
-https://youtu.be/NVGpzxhw81Y 28분까지
+[강의](https://youtu.be/NvcWPkowzFU) - 34분부터   
+[강의](https://youtu.be/NVGpzxhw81Y) - 28분까지  
 
 
 
